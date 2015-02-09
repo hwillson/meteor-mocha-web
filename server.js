@@ -170,7 +170,7 @@ else {
 
 
     var mochaExports = {};
-    mocha.suite.emit("pre-require", mochaExports);
+    mocha.suite.emit("pre-require", mochaExports, null, global.mocha);
     //console.log(mochaExports);
 
     //patch up describe function so it plays nice w/ fibers
